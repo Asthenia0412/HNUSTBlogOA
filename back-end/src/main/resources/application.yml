@@ -1,0 +1,96 @@
+# application.yml
+spring:
+  # Spring Boot应用配置
+  application:
+    name: my-springboot-app  # 项目名称
+
+  # 数据源配置（MySQL）
+  datasource:
+    url: jdbc:mysql://192.168.11.128:3306/dataBaseDesign?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: xiaoyongcai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10  # 连接池最大连接数
+      minimum-idle: 5        # 最小空闲连接数
+      idle-timeout: 30000    # 连接最大空闲时间（毫秒）
+      connection-timeout: 30000  # 连接超时时间（毫秒）
+      pool-name: HikariCP     # 使用的连接池名字
+
+  # MyBatis 配置
+  mybatis-plus:
+    mapper-locations: classpath*:mapper/**/*.xml
+    type-aliases-package: com.example.demo.model
+    global-config:
+      db-config:
+        id-type: auto  # 主键策略
+        logic-delete-value: 1
+        logic-not-delete-value: 0
+
+  # Druid 配置（数据库连接池）
+  druid:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.11.128:3306/dataBaseDesign
+    username: root
+    password: xiaoyongcai
+    initial-size: 5
+    min-idle: 5
+    max-active: 10
+    validation-query: SELECT 1
+    test-on-borrow: true
+    test-while-idle: true
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    max-wait: 60000
+
+  # Redis配置
+  data:
+    redis:
+      host: 192.168.11.128
+      port: 6379
+      timeout: 60000  # 连接超时时间
+      jedis:
+        pool:
+          max-active: 8  # 连接池最大连接数
+          max-idle: 8    # 最大空闲连接数
+          min-idle: 0    # 最小空闲连接数
+          max-wait: 3000  # 最大等待时间（毫秒）
+
+
+
+  # JWT 配置
+  jwt:
+    secret: your_secret_key  # JWT密钥
+    expiration: 3600         # JWT过期时间（秒）
+    prefix: "Bearer"         # JWT前缀
+
+  # Spring Security 配置
+  security:
+    user:
+      name: xiaoyongcai            # 默认用户名
+      password: xiaoyongcai    # 默认密码
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://your-jwt-issuer  # JWT颁发者地址
+          jwk-set-uri: http://your-jwk-uri    # JWK集URI
+
+  # 其他常规配置
+  server:
+    port: 8080  # 服务器端口
+    servlet:
+      context-path: /api  # API基础路径
+
+  # 日志配置
+  logging:
+    level:
+      org.springframework.web: DEBUG
+      com.example.demo: INFO
+    pattern:
+      console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+# 自定义配置（例如数据库的表前缀等）
+myapp:
+  db:
+    table-prefix: app_  # 数据库表前缀
+
