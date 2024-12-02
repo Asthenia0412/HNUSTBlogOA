@@ -14,22 +14,22 @@
 
 ## 1.1技术选型
 
-|              依赖名称              | 版本号       |
-| :--------------------------------: | ------------ |
-|                JDK                 | JDK17.0.11   |
-|             SpringBoot             | 3.0.2        |
-|             SpringWeb              | starter稳定  |
-|            Mybatis-Plus            | 3.5.5        |
-|              Mybatis               | 3.0.3        |
-|               druid                | 1.2.6        |
-|              mysql5.7              |              |
-|               Lombok               | starter稳定  |
-|         Spring Data Redis          | starter稳定  |
-|        Spring Data MongoDB         | starter稳定  |
-|                JWT                 | 0.12.3       |
-|     Spring Security(已经完毕)      | starter稳定  |
-| MongoDB 阿里云（Xiaoyongcai_都是） | Xiaoyongcai_ |
-|                                    |              |
+|             依赖名称              | 版本号      |
+| :-------------------------------: | ----------- |
+|                JDK                | JDK17.0.11  |
+|            SpringBoot             | 3.0.2       |
+|             SpringWeb             | starter稳定 |
+|           Mybatis-Plus            | 3.5.5       |
+|              Mybatis              | 3.0.3       |
+|               druid               | 1.2.6       |
+|             mysql5.7              |             |
+|              Lombok               | starter稳定 |
+|         Spring Data Redis         | starter稳定 |
+|        Spring Data MongoDB        | starter稳定 |
+|                JWT                | 0.12.3      |
+|     Spring Security(已经完毕)     | starter稳定 |
+| MongoDB 阿里云（用户自定义_都是） | 用户自定义_ |
+|                                   |             |
 
 ## 1.2环境变量
 
@@ -40,10 +40,10 @@
 | Application-port  |      8080      |
 |   MySQL-DBName    | dataBaseDesign |
 |  Mysql-username   |      root      |
-|  Mysql-password   |  xiaoyongcai   |
+|  Mysql-password   |   用户自定义   |
 |  MongoDB-DBName   | dataBaseDesign |
-|   security-name   |  xiaoyongcai   |
-| security-password |  xiaoyongcai   |
+|   security-name   |   用户自定义   |
+| security-password |   用户自定义   |
 |    Mysql-port     |      3306      |
 |    Redis-port     |      6379      |
 |   MongoDB-port    |     17017      |
