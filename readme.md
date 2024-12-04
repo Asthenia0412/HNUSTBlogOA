@@ -1,4 +1,32 @@
+![5](./assets/1.png)
 
+![6](./assets/2.png)
+
+![7](./assets/3.png)
+
+![8](./assets/4.png)
+
+![9](./assets/5.png)
+
+![10](./assets/6.png)
+
+![11](./assets/7.png)
+
+![12](./assets/8.png)
+
+![13](./assets/9.png)
+
+![前后端通讯图.drawio](./assets/前后端通讯图.drawio-1733329924694-3.png)
+
+
+
+![2](./assets/10.PNG)
+
+![3](./assets/11.png)
+
+![4](./assets/12.png)
+
+![4](./assets/13.png)
 
 # 0.项目版本与功能迭代
 
