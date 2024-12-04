@@ -1,14 +1,14 @@
 ![5](./assets/1.png)
 
-![6](./assets/2.png)
+
 
 ![7](./assets/3.png)
 
 ![8](./assets/4.png)
 
-![9](./assets/5.png)
 
-![10](./assets/6.png)
+
+
 
 ![11](./assets/7.png)
 
